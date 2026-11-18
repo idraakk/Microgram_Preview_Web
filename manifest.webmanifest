@@ -1,0 +1,11 @@
+{
+  "id": "./",
+  "name": "MicroGram",
+  "short_name": "MicroGram",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#101113",
+  "theme_color": "#101113",
+  "icons": [{ "src": "./icon.svg?v=3", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}
