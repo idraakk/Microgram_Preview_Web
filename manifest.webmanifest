@@ -1,11 +1,14 @@
 {
   "id": "./",
-  "name": "MicroGram",
+  "name": "MicroGram Preview",
   "short_name": "MicroGram",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#101113",
+  "background_color": "#000000",
   "theme_color": "#101113",
-  "icons": [{ "src": "./icon.svg?v=3", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+  "icons": [
+    { "src": "./icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
 }

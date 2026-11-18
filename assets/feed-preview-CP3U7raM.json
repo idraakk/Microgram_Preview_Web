@@ -1,0 +1,131 @@
+{
+  "feedbackEnabled": false,
+  "revision": "preview",
+  "version": 1,
+  "editorials": [
+    {
+      "id": "editorial-intro",
+      "kind": "post",
+      "topic": "Meet MicroGram",
+      "publishedAt": "2025-01-01T00:00:00Z",
+      "pinned": false,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "MicroGram turns YouTube videos and playlists into reels of the duration you choose. Watch a lecture one reel at a time."
+        },
+        {
+          "type": "text",
+          "text": "Capture a frame, add a label or a note, and find your screenshots organized into albums by video in your Screen Notes Library."
+        },
+        {
+          "type": "image",
+          "src": "https://microgram-community.idraakmk.workers.dev/brand-post.svg",
+          "alt": "MicroGram. by Idraak"
+        }
+      ]
+    },
+    {
+      "id": "editorial-next-scroll",
+      "kind": "post",
+      "topic": "Make your next scroll count",
+      "layout": "purpose",
+      "publishedAt": "2025-01-01T00:00:00Z",
+      "pinned": false,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Make your next\nscroll count.",
+          "runs": [
+            {
+              "text": "Make your next\n"
+            },
+            {
+              "text": "scroll count.",
+              "color": "#ff4e94"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "YouTube lectures. The reel experience you already know."
+        },
+        {
+          "type": "heading",
+          "text": "Bring a lecture"
+        },
+        {
+          "type": "text",
+          "text": "Add a YouTube video or a whole playlist."
+        },
+        {
+          "type": "heading",
+          "text": "Find your flow"
+        },
+        {
+          "type": "text",
+          "text": "Learn in short reels. See each small step add up."
+        },
+        {
+          "type": "heading",
+          "text": "Keep what clicks"
+        },
+        {
+          "type": "text",
+          "text": "Save a reel, write a note or capture a frame."
+        }
+      ]
+    },
+    {
+      "id": "editorial-scrolling",
+      "kind": "post",
+      "topic": "A better kind of scrolling",
+      "font": "default",
+      "layout": "momentum",
+      "headingPlacement": "byline",
+      "publishedAt": "2025-01-01T00:00:00Z",
+      "pinned": false,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "What if your scrolling addiction could actually help you complete your lectures?"
+        },
+        {
+          "type": "text",
+          "text": "If sitting through long lectures feels like a struggle, you're not alone. Sometimes, getting started and staying engaged is harder than the learning itself."
+        },
+        {
+          "type": "heading",
+          "text": "How does MicroGram help?"
+        },
+        {
+          "type": "heading",
+          "text": "Turn your scrolling habit into learning time."
+        },
+        {
+          "type": "text",
+          "text": "Use the familiar swipe-to-next experience to move through lectures in short, focused reels, making it easier to keep learning one step at a time."
+        },
+        {
+          "type": "heading",
+          "text": "Stay engaged with your lectures, one reel at a time."
+        },
+        {
+          "type": "text",
+          "text": "The dopamine-driven reward behind every swipe is what makes reels so addictive. MicroGram redirects that same reward towards learning, making every swipe feel like progress."
+        },
+        {
+          "type": "heading",
+          "text": "Skip the manual note-taking. Capture what matters."
+        },
+        {
+          "type": "text",
+          "text": "Pause, capture a frame, add a label or a note, and save it. Find every capture organized by video in your Screen Notes Library, ready to revisit."
+        }
+      ]
+    }
+  ],
+  "commentsEnabled": false,
+  "posts": [],
+  "enabled": true
+}

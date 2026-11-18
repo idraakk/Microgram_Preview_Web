@@ -14,14 +14,39 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./microgram-favicon-32.png" />
     <link rel="icon" type="image/png" sizes="64x64" href="./microgram-favicon-64.png" />
 
-    <style>:root{--lightningcss-light:initial;--lightningcss-dark: ;color-scheme:light only}#preview-startup{z-index:100000;background:#000;place-items:center;transition:opacity .16s;display:grid;position:fixed;inset:0}#preview-startup img{width:min(288px,100vw);height:auto}#preview-startup.is-ready{opacity:0;pointer-events:none}@media (prefers-reduced-motion:reduce){#preview-startup{transition:none}}</style>
+    <script>
+      (() => {
+        const fail = () => {
+          const startup = document.getElementById('preview-startup');
+          if (!startup) return;
+          startup.hidden = true;
+          document.getElementById('preview-startup-error').hidden = false;
+        };
+        const timer = setTimeout(fail, 5500);
+        const watch = (event) => {
+          if (event.target instanceof HTMLScriptElement && event.target.type === 'module') fail();
+        };
+        window.addEventListener('error', watch, true);
+        window.addEventListener('microgram:preview-ready', () => {
+          clearTimeout(timer);
+          window.removeEventListener('error', watch, true);
+          document.getElementById('preview-startup-error')?.remove();
+        }, { once: true });
+      })();
+    </script>
+    <style>:root{--lightningcss-light:initial;--lightningcss-dark: ;color-scheme:light only}#preview-startup{z-index:100000;background:#000;place-items:center;transition:opacity .16s;display:grid;position:fixed;inset:0}#preview-startup[hidden],#preview-startup-error[hidden]{display:none}#preview-startup-error{color:#f3f5f7;background:#101113;min-height:100dvh;padding:32px;font:16px system-ui,sans-serif}#preview-startup-error a{color:#ff78ac}#preview-startup img{width:min(288px,100vw);height:auto}#preview-startup.is-ready{opacity:0;pointer-events:none}@media (prefers-reduced-motion:reduce){#preview-startup{transition:none}}</style>
     <link rel="manifest" href="./manifest.webmanifest" />
-    <script type="module" crossorigin src="./assets/index-CbSwePQW.js"></script>
+    <script type="module" crossorigin src="./assets/index-D065kbvi.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/dist-ftMFAyxR.js">
     <link rel="stylesheet" crossorigin href="./assets/index-DAAljqLZ.css">
   </head>
   <body>
     <div id="preview-startup" aria-hidden="true"><img src="./startup.png" alt="" /></div>
+    <main id="preview-startup-error" hidden>
+      <h1>MicroGram couldn’t open</h1>
+      <p>Check your connection, then try opening the preview again.</p>
+      <a href="./">Try again</a>
+    </main>
     <div id="root"></div>
   </body>
 </html>
